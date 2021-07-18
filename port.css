@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Encode+Sans+SC:wght@100&family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  transition-duration: 1s;
+  margin-bottom: 5%;
+  position: relative;
+  background-image: url("./images/MyCoverPic2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cover-text h1 {
+  display: none;
+  font-size: 500%;
+  color: cyan;
+  letter-spacing: 10%;
+  word-spacing: 5%;
+  font-family: "Syncopate", sans-serif;
+  transition-duration: 0.3s;
+  width: 50%;
+  margin: 0 auto;
+}
+.cover-text p {
+  display: none;
+  font-size: 140%;
+  letter-spacing: 10%;
+  word-spacing: 5%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  transition-duration: 0.3s;
+}
+
+.cover-text h1:hover,
+p:hover {
+  width: 100%;
+  filter: brightness(120%);
+  background: rgba(0, 255, 255, 0.081);
+}
+
+.heading {
+  background: rgba(0, 255, 255, 0.181);
+  font-size: 250%;
+  padding: 1%;
+  box-shadow: 5px 5px 20px black;
+  width: 100%;
+  margin: 5% auto 5% auto;
+  text-align: center;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+
+  letter-spacing: 10%;
+  word-spacing: 5%;
+  color: cyan;
+}
+
+.navbar {
+  font-size: larger;
+  margin-top: 0;
+  text-transform: uppercase;
+  margin-bottom: -6%;
+  z-index: 2;
+}
+
+.nav-item {
+  transition-duration: 0.7s;
+}
+
+.nav-item:hover {
+  text-decoration: overline;
+  text-decoration-color: cyan;
+  text-shadow: 6px 6px 9px black;
+}
+
+.card {
+  transition-duration: 0.6s;
+}
+
+.card:hover {
+  /* border-radius: 10px; */
+  /* box-shadow: 1px 1px 3px rgb(160, 193, 193); */
+  transform: translateY(-6px);
+}
+
+#skills {
+  text-align: center;
+  width: 100vw;
+}
+
+#skills .skill-name {
+  color: cyan;
+  font-size: 150%;
+}
+
+#skills img {
+  border-radius: 7px;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+
+#skills img:hover {
+  box-shadow: 5px 5px 15px grey;
+  transform: translateY(-4px);
+}
+
+.intro {
+  text-align: left;
+  font-size: 200%;
+  font-style: italic;
+  color: white;
+}
+.blockquote {
+  position: relative;
+  padding: 1%;
+  background-color: cyan;
+}
+
+.blockquote-footer {
+  color: wheat;
+  text-align: end;
+}
+
+.blockquote img {
+  filter: grayscale(100%);
+  border-radius: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#about {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.aboutText {
+  font-size: 150%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: #000;
+  height: auto;
+}
+
+.aboutImg {
+  height: 100%;
+  filter: grayscale(90%);
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  border: 1px solid blue;
+}
+
+.card-title {
+  font-family: "Nunito", sans-serif;
+}
+
+#edu .card {
+  background: rgb(37, 33, 33);
+  margin: 0 auto 5% auto;
+}
+
+@media screen and (max-width: 600px) {
+  .cover {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .cover-text h1 {
+    top: 30%;
+    font-size: 250%;
+  }
+
+  .cover-text p {
+    top: 50%;
+  }
+
+  .headers {
+    font-size: 130%;
+  }
+
+  .heading {
+    font-size: 130%;
+  }
+
+  .aboutText {
+    font-size: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  #about {
+    height: 80vh;
+    margin: 0 auto;
+  }
+  #skills .skill-name {
+    font-size: 100%;
+  }
+}
+
+#projects .card {
+  margin: 0 6% 5% 6%;
+  min-width: 30%;
+}
