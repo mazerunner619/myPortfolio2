@@ -84,16 +84,18 @@ p:hover {
   font-size: larger;
   margin-top: 0;
   text-transform: uppercase;
-  margin-bottom: -6%;
+  margin-bottom: -12%;
   z-index: 2;
 }
 
 .nav-item {
-  transition-duration: 0.7s;
+  color: white;
+  transition-duration: 0.4s;
 }
 
 .nav-item:hover {
   text-decoration: overline;
+  color: white;
   text-decoration-color: cyan;
   text-shadow: 6px 6px 9px black;
 }
