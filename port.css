@@ -104,12 +104,6 @@ p:hover {
   transition-duration: 0.6s;
 }
 
-.card:hover {
-  /* border-radius: 10px; */
-  /* box-shadow: 1px 1px 3px rgb(160, 193, 193); */
-  transform: translateY(-6px);
-}
-
 #skills {
   text-align: center;
   width: 100vw;
@@ -189,6 +183,19 @@ p:hover {
 #edu .card {
   background: rgb(37, 33, 33);
   margin: 0 auto 5% auto;
+}
+.card-img-wrapper {
+  overflow: hidden;
+}
+
+.card img {
+  border: 1px solid cyan;
+  transition-duration: 0.6s;
+}
+
+.card img:hover {
+  filter: brightness(80%);
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 600px) {
