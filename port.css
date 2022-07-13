@@ -63,7 +63,11 @@ p:hover {
   filter: brightness(120%);
   background: rgba(0, 255, 255, 0.081);
 }
-
+a{
+  color: cyan;
+  text-decoration :underline;
+  font-family: 'Times New Roman', Times, serif;
+}
 .heading {
   background: rgba(0, 255, 255, 0.181);
   font-size: 250%;
@@ -166,6 +170,7 @@ p:hover {
 }
 
 .aboutImg {
+  transition-duration: 0.6s;
   height: 100%;
   filter: grayscale(90%);
   border-radius: 50%;
@@ -173,7 +178,6 @@ p:hover {
   padding: 0;
   margin: 0;
   height: auto;
-  border: 1px solid blue;
 }
 
 .card-title {
@@ -183,7 +187,15 @@ p:hover {
 #edu .card {
   background: rgb(37, 33, 33);
   margin: 0 auto 5% auto;
+  transition-duration: 0.2s;
+  border: 0;
 }
+
+#edu .card:hover{
+  /* box-shadow: 2px 2px 3px grey; */
+  text-shadow: 2px 2px 2px black;
+}
+
 .card-img-wrapper {
   overflow: hidden;
 }
