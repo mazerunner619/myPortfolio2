@@ -14,6 +14,15 @@ body {
   box-sizing: border-box;
 }
 
+.aboutText .header{
+  transition-duration: 0.5s;
+}
+
+.aboutText .header:hover{
+  text-decoration :overline;
+  text-decoration-color: rgba(0, 255, 255, 0.649);
+  text-align: center;
+}
 .cover {
   width: 100vw;
   height: 100vh;
@@ -154,19 +163,13 @@ a{
   top: 0;
 }
 
-#about {
-  background: #000;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-}
-
 .aboutText {
   font-size: 150%;
   font-family: "Montserrat", sans-serif;
   color: white;
   background: #000;
   height: auto;
+  text-align: justify;
 }
 
 .aboutImg {
@@ -192,6 +195,18 @@ a{
 }
 
 #edu .card:hover{
+  /* box-shadow: 2px 2px 3px grey; */
+  text-shadow: 2px 2px 2px black;
+}
+
+#experience .card {
+  background: rgb(37, 33, 33);
+  margin: 0 auto 5% auto;
+  transition-duration: 0.2s;
+  border: 0;
+}
+
+#experience .card:hover{
   /* box-shadow: 2px 2px 3px grey; */
   text-shadow: 2px 2px 2px black;
 }
