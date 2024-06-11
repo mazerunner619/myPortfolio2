@@ -104,6 +104,7 @@ a{
 .nav-item {
   color: white;
   transition-duration: 0.4s;
+  font-size :medium;
 }
 
 .nav-item:hover {
