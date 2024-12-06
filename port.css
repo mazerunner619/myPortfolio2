@@ -15,7 +15,7 @@ body {
 }
 
 .aboutText .header{
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 .aboutText .header:hover{
@@ -27,7 +27,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin-top: 0;
-  transition-duration: 1s;
+  transition-duration: 0.2;
   margin-bottom: 5%;
   position: relative;
   background-image: url("./images/MyCoverPic2.jpg");
@@ -52,7 +52,7 @@ body {
   letter-spacing: 10%;
   word-spacing: 5%;
   font-family: "Syncopate", sans-serif;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   width: 50%;
   margin: 0 auto;
 }
@@ -63,7 +63,7 @@ body {
   word-spacing: 5%;
   color: white;
   font-family: "Montserrat", sans-serif;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .cover-text h1:hover,
@@ -72,10 +72,16 @@ p:hover {
   filter: brightness(120%);
   background: rgba(0, 255, 255, 0.081);
 }
+
+/* logo  */
 a{
   color: cyan;
-  text-decoration :underline;
+  /* text-decoration :underline; */
   font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand a{
+  font-family: "Syncopate", sans-serif;
 }
 .heading {
   background: rgba(0, 255, 255, 0.181);
@@ -103,7 +109,7 @@ a{
 
 .nav-item {
   color: white;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   font-size :medium;
 }
 
@@ -115,7 +121,7 @@ a{
 }
 
 .card {
-  transition-duration: 0.6s;
+  transition-duration: 0.2s;
 }
 
 #skills {
@@ -129,13 +135,13 @@ a{
 }
 
 #skills img {
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 5px;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 #skills img:hover {
-  box-shadow: 5px 5px 15px grey;
+  /* box-shadow: 5px 5px 15px grey; */
   transform: translateY(-4px);
 }
 
@@ -174,7 +180,7 @@ a{
 }
 
 .aboutImg {
-  transition-duration: 0.6s;
+  transition-duration: 0.2s;
   height: 100%;
   filter: grayscale(90%);
   border-radius: 50%;
@@ -218,7 +224,7 @@ a{
 
 .card img {
   border: 1px solid cyan;
-  transition-duration: 0.6s;
+  transition-duration: 0.2s;
 }
 
 .card img:hover {
