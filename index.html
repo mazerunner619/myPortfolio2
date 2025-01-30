@@ -18,7 +18,7 @@
 
   <nav id="navbar" class="navbar sticky-top navbar-expand-sm navbar-dark"> 
 
-    <a class="navbar-brand" href="#top">Md Atif Ansar</a>
+    <!-- <a class="navbar-brand" href="#top">Md Atif Ansar</a> -->
 
     <button id="tbtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
   </nav>
 
 
-<div class="cover">
+<div class="cover hidden">
 
   <div class="cover-text">
     <h1>Im Atif</h1>
@@ -46,10 +46,10 @@
   </div>
 
 </div>
-  <hr/>
 
+<hr/>
 
-  <div id="about">
+  <div id="about" class="hidden">
     <h1 class="heading">A bit about Myself</h1>
 
     <div class="container">
@@ -72,15 +72,10 @@
         </div>
   </div> 
     </div>
-
-    
-    
-
-    
   </div>
 
 
-  <div id="edu">  
+  <div id="edu" class="hidden">  
 
     <h1 class="heading">Education</h1>
 
@@ -129,7 +124,7 @@
   <hr>
 
   
-  <div id="experience" style="margin-bottom: 10%;">
+  <div class="hidden" id="experience" style="margin-bottom: 10%;">
 
     <h1 class="heading">Experience</h1>
 
@@ -191,7 +186,7 @@
 
 
 
-  <div id="skills" style="margin-bottom: 10%;">
+  <div class="hidden" id="skills" style="margin-bottom: 10%;">
     <!-- <img class="cover-pic" src="./skillsBG.jpg" /> -->
     <h1 class="heading">My Skills</h1>
 
@@ -233,13 +228,6 @@
           <img src="./images/java.webp" width="50%">
           </a>
           <div class="skill-name">Java</div>
-        </div>
-
-        <div class="col-6 col-sm-4 mb-4">
-          <a href="javascript:void(0);">
-          <img src="./images/python-logo.webp" width="50%">
-          </a>
-          <div class="skill-name">Python</div>
         </div>
 
         <!--react js-->
@@ -295,113 +283,126 @@
           <div class="skill-name">Hadoop</div>
         </div>
 
+        <div class="col-6 col-sm-4 mb-4">
+          <a href="javascript:void(0);">
+          <img src="./images/docker-logo.png" width="50%">
+          </a>
+          <div class="skill-name">Docker</div>
+        </div>
+
       </div>
 
     </div>
   </div>
 
 
-  <div id="projects">
-    <h1 class="heading">My Projects</h1>
-
-
-<div class="card-deck justify-content-center">
-
-    
-    <div class="card">
-      <div class="card-img-wrapper">
-      <img class="card-img-top" src="./images/thequote.png" alt="The QuoteBlog image cap">
-    </div>
-      <div class="card-body">
-        <h5 class="card-title">The Quote Blog</h5>
-        <p class="card-text">
-          A mini social media full stack MERN web application involving immense CRUD operations and other web technologies
-          .The UI being boosted with material-UI and react-bootstrap (responsive with devices), deployed with heroku .
-          Includes features like uploading, liking, notifications ,friend requests ,searcing users ,real-time chatting using socket-io .
-        </p>        
-        <a href="https://github.com/mazerunner619/thequote2.0" target="_blank" class="btn btn-outline-info">Source Code</a>
-        <a href="https://thequoteblog.onrender.com" target="_blank" class="btn btn-outline-info">View Project</a></div>
-    </div>
-
-
-
-
-    <div class="card">
-      <div class="card-img-wrapper">
-      <img class="card-img-top" src="./images/tutedude.png" alt="TuteHub sample">
-    </div>
-      <div class="card-body">
-        <h5 class="card-title">The Tutors Point</h5>
-        <p class="card-text">
-          An assignment manager for the tutors and student. Students may request to join a classroom created by tutor, submit their assignments and tutors 
-          may evaluate it. Node mailer used for user registration and password reset purpose. Powered by MERN stack and Deployed on render.
-        </p>    
-        <a href="https://github.com/mazerunner619/TuteHub" target="_blank" class="btn btn-outline-info">Source Code</a>
-        <a href="https://thetutorspoint.onrender.com/" target="_blank" class="btn btn-outline-info">View Project</a></div>
-    </div>
-
-    <div class="card">
-      <div class="card-img-wrapper">
-      <img class="card-img-top" src="./images/library-app.png" alt="Tic Tac Toe image cap">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Library Management Full-stack</h5>
-        <p class="card-text">Complete library management application. You can search available books in the library browse/ checkin / checkout books. Based on React frontend and Express backend with typescript. </p>
-        <a href="https://github.com/mazerunner619/library-app-mern-typescript" target="_blank" class="btn btn-outline-info">Source Code</a>
-        <a href="https://mazeys-library.onrender.com/" target="_blank" class="btn btn-outline-info">View Project</a></div>
-    </div>
-
-    <div class="card">
-      <div class="card-img-wrapper">
-      <img class="card-img-top" src="./images/thet3game.png" alt="Tic Tac Toe image cap">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Tic-Tac-Toe</h5>
-        <p class="card-text">Online Tic-Tac-Toe, where you can play vs online opponents OR vs the unbeatable computer ( uses minimax algorithm ). It has minimalistic interface with responsive UI and in-game emoji reactions for player interactions. 
-          Uses socket.io package.
-        </p>
-        <a href="https://github.com/mazerunner619/tictactoe" target="_blank" class="btn btn-outline-info">Source Code</a>
-        <a href="https://mazeyst3game.onrender.com/" target="_blank" class="btn btn-outline-info">View Project</a></div>
-    </div>
-   
-  <div class="card">
-    <div class="card-img-wrapper">
-    <img class="card-img-top" src="./images/wattodoo.png" alt="Tic Tac Toe image cap">
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Todo App</h5>
-      <p class="card-text">This is a general todo application. Just signup and you're ready to go, save tasks, notes and any text for future and access from the web.</p>
-      <a href="https://github.com/mazerunner619/TodoReactApp2" target="_blank" class="btn btn-outline-info">Source Code</a>
-    <a href="https://wattodoo.onrender.com/" class="btn btn-outline-info" target="_blank" style="margin-left: auto;">View Project</a>
-       </div>
-  </div>
-   
-      <div class="card">
+<div id="projects">
+  <h1 class="heading">My Projects</h1>
+  <div class="card-deck justify-content-center">
+    <div class="card hidden">
         <div class="card-img-wrapper">
-        <img class="card-img-top" src="./images/pythonCalci.png" alt="Tic Tac Toe image cap">
+        <img class="card-img-top" src="./images/thequote.png" alt="The QuoteBlog image cap">
+      </div>
+        <div class="card-body">
+          <div>
+          <h5 class="card-title">The Quote Blog</h5>
+          <p class="card-text">
+            A mini social media full stack MERN web application involving immense CRUD operations and other web technologies
+            .The UI being boosted with material-UI and react-bootstrap (responsive with devices), deployed with heroku .
+            Includes features like uploading, liking, notifications ,friend requests ,searcing users ,real-time chatting using socket-io .
+          </p>    
+        </div>
+        <div>
+          <a href="https://github.com/mazerunner619/thequote2.0" target="_blank" class="btn btn-outline-info">Source Code</a>
+          <a href="https://thequoteblog.onrender.com" target="_blank" class="btn btn-outline-info">View Project</a></div>
+        </div>    
+      </div>
+
+      <div class="card hidden">
+        <div class="card-img-wrapper">
+        <img class="card-img-top" src="./images/tutedude.png" alt="TuteHub sample">
+      </div>
+        <div class="card-body">
+          <div>
+          <h5 class="card-title">The Tutors Point</h5>
+          <p class="card-text">
+            An assignment manager for the tutors and student. Students may request to join a classroom created by tutor, submit their assignments and tutors 
+            may evaluate it. Node mailer used for user registration and password reset purpose. Powered by MERN stack and Deployed on render.
+          </p>  
+        </div>
+        <div>
+          <a href="https://github.com/mazerunner619/tutors-point" target="_blank" class="btn btn-outline-info">Source Code</a>
+          <a href="https://thetutorspoint.onrender.com/" target="_blank" class="btn btn-outline-info">View Project</a></div>
+        </div>  
+      </div>
+
+      <div class="card hidden">
+        <div class="card-img-wrapper">
+        <img class="card-img-top" src="./images/library-app.png" alt="Tic Tac Toe image cap">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Python Calculator</h5>
-          <p class="card-text">This is a basic calculator made with the Graphical User Interface tool of python " Tkinter " .</p>
-          <a href="https://github.com/mazerunner619/Calculator-GUI-Python-Tkinter" target="_blank" class="btn btn-outline-info">Source Code</a>
-           </div>
+          <div>
+            <h5 class="card-title">Library Management</h5>
+            <p class="card-text">A Complete library management application. Patrons can browse books for availability and employee can checkin/checkout for patrons having library cards. User's loan history accessible to employee and self. Based on React frontend and Express backend with typescript. Optimized with pagination and caching (using Redis) implementations.  </p>
+          </div>
+          <div>
+            <a href="https://github.com/mazerunner619/library-app-mern-typescript" target="_blank" class="btn btn-outline-info">Source Code</a>
+            <a href="https://theshelf.onrender.com/" target="_blank" class="btn btn-outline-info">View Project</a>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card hidden">
         <div class="card-img-wrapper">
-        <img class="card-img-top" src="./images/rpsGame.png" alt="Tic Tac Toe image cap">
+        <img class="card-img-top" src="./images/dtask-sample.png" alt="Tic Tac Toe image cap">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Rock Paper Scissor</h5>
-          <p class="card-text">This is a basic Rock Paper Scissor game made with python's Graphical User Interface tool " Tkinter " .
-            Not too Graphical but does what it is made for. It takes in a player's name to begin with and is a versus computer game.
+          <div>
+          <h5 class="card-title">Decentralized Todo App</h5>
+          <p class="card-text">A todo list that is decentralized and stores your data on the Ethereum blockchain. All you need is a web 3 wallet like Metamask. 
+            Your tasks, your control, on the blockchain.
           </p>
-          <a href="https://github.com/mazerunner619/RockPaperScissorsGame" target="_blank" class="btn btn-outline-info">Source Code</a>
-           </div>
-      </div>
-      
-</div>
+        </div>
+  <div>
+          <a href="https://github.com/mazerunner619/dtask" target="_blank" class="btn btn-outline-info">Source Code</a>
+          <a href="https://mazerunner619.github.io/dtask/" target="_blank" class="btn btn-outline-info">View Project</a></div>
   </div>
+
+      </div>
+
+      <div class="card hidden">
+        <div class="card-img-wrapper">
+        <img class="card-img-top" src="./images/thet3game.png" alt="Tic Tac Toe image cap">
+        </div>
+        <div class="card-body">
+          <div>
+          <h5 class="card-title">Tic-Tac-Toe</h5>
+          <p class="card-text">Online Tic-Tac-Toe, where you can play vs online opponents OR vs the unbeatable computer ( uses minimax algorithm ). It has minimalistic interface with responsive UI and in-game emoji reactions for player interactions. 
+            Uses socket.io npm package for web socket implementation.
+          </p>
+        </div>
+        <div>
+          <a href="https://github.com/mazerunner619/tictactoe" target="_blank" class="btn btn-outline-info">Source Code</a>
+          <a href="https://mazeyst3game.onrender.com/" target="_blank" class="btn btn-outline-info">View Project</a></div>
+        </div>
+      </div>
+    
+        <div class="card hidden">
+          <div class="card-img-wrapper">
+          <img class="card-img-top" src="./images/pythonCalci.png" alt="Tic Tac Toe image cap">
+          </div>
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Python Calculator</h5>
+              <p class="card-text">This is a basic calculator made with the Graphical User Interface tool of python " Tkinter " .</p>
+            </div>
+            <div>
+            <a href="https://github.com/mazerunner619/Calculator-GUI-Python-Tkinter" target="_blank" class="btn btn-outline-info">Source Code</a>
+          </div>
+            </div>
+        </div>      
+  </div>
+</div>
 
 
   <footer id="contact" class="text-center text-white" style="background-color:rgba(0, 135, 135, 0.8);">
@@ -445,3 +446,4 @@
 </body>
 
 </html>
+

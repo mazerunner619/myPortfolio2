@@ -7,22 +7,22 @@ body {
   background: black;
   overflow-x: hidden;
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.aboutText .header{
+/* .aboutText .header{
   transition-duration: 0.2s;
-}
+} */
 
-.aboutText .header:hover{
+/* .aboutText .header:hover{
   text-decoration :overline;
   text-decoration-color: rgba(0, 255, 255, 0.649);
   text-align: center;
-}
+} */
+
 .cover {
   width: 100vw;
   height: 100vh;
@@ -34,6 +34,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-right-radius: 9999px;
 }
 
 .cover-text {
@@ -46,8 +47,8 @@ body {
   text-align: center;
 }
 .cover-text h1 {
-  display: none;
-  font-size: 500%;
+  /* display: none; */
+  font-size: 150000%;
   color: cyan;
   letter-spacing: 10%;
   word-spacing: 5%;
@@ -58,7 +59,7 @@ body {
 }
 .cover-text p {
   display: none;
-  font-size: 140%;
+  font-size: 150%;
   letter-spacing: 10%;
   word-spacing: 5%;
   color: white;
@@ -194,6 +195,14 @@ a{
   font-family: "Nunito", sans-serif;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 10px;
+}
+
 #edu .card {
   background: rgb(37, 33, 33);
   margin: 0 auto 5% auto;
@@ -272,4 +281,23 @@ a{
 #projects .card {
   margin: 0 6% 5% 6%;
   min-width: 30%;
+}
+
+
+
+pre {
+  font-family: "Montserrat", sans-serif;
+  white-space: pre-wrap;
+}
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px), translateX(30px); /* Move element 30px down */
+  transition: opacity 0.6s ease-out, transform 0.4s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0), translateX(0);
 }

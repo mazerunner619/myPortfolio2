@@ -6,8 +6,7 @@ window.onscroll = function () {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     $(".nav-item").css("color", "rgba(0, 0, 0, 0.7)");
     $(".navbar-brand").css("color", "black");
-    document.getElementById("navbar").style.background =
-      "rgba(0,255,255,0.837)";
+    document.getElementById("navbar").style.background = "rgb(0, 255, 255)";
   } else {
     $(".nav-item").css("color", "rgba(255,255,255,0.6)");
     $(".navbar-brand").css("color", "white");
@@ -29,10 +28,22 @@ $("#tbtn").click(function () {
 
 $(document).ready(function () {
   setTimeout(() => {
-    $(".cover h1").slideDown();
-  }, 1200);
+    $(".cover-text p").slideDown();
+    document.querySelector(".cover-text h1").style.fontSize = "500%";
+  }, 800);
+});
 
-  setTimeout(() => {
-    $(".cover p").slideDown();
-  }, 1000);
+document.addEventListener("DOMContentLoaded", function () {
+  const hiddenElements = document.querySelectorAll(".hidden");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  ); // Trigger when 20% of the element is visible
+  hiddenElements.forEach((el) => observer.observe(el));
 });
